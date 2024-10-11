@@ -12,21 +12,21 @@ function isPrime(num) {
     }
 }
 const arr_prime = [];
-let limit = 100;
+let limit = 500;
 for (let i = 2; i <= limit; i++) {
     if (i > 4 ) {
         if (i % 2 === 0 || i % 3 === 0 || i % 4 === 0) {
-            console.log("Not Prime");
+
         } else {
             if (isPrime(i)) {
                 arr_prime.push(i);
-                console.log("Prime");
+                // console.log("Prime");
             }
         }
     }else {
         if (isPrime(i)) {
             arr_prime.push(i);
-            console.log("Prime");
+            // console.log("Prime");
         }
     }
     
